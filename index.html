@@ -5,9 +5,38 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forensic Psychiatry Registration System (eFPRS)</title>
+    
+    <!-- Preload fonts jika ada -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> -->
+    
+    <!-- Basic styling untuk pastikan root div visible -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <noscript>
+      <strong>Maaf, aplikasi ini memerlukan JavaScript untuk berfungsi. Sila aktifkan JavaScript dalam pelayar anda.</strong>
+    </noscript>
+    
+    <div id="root">
+      <!-- Loading state sementara -->
+      <div style="padding: 2rem; text-align: center;">
+        Memuatkan sistem...
+      </div>
+    </div>
+    
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
