@@ -13,6 +13,10 @@
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+    npm install --save-dev gh-pages
+    npm install react react -dom
+    npm install --save-dev vite
+    @vitejs/plugin-react
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
